@@ -16,8 +16,8 @@ class InterestsController < ApplicationController
 		render :file => "#{RAILS_ROOT}/app/controllers/parking_output.json"
 	elsif params[:category] == "METRO"
   		render :json => Interest.stops.to_json
-        elsif params[:category] == "Photos"
-                render :json => Interest.panoramio
+  elsif params[:category] == "Photos"
+      render :json => Interest.panoramio
 	elsif params[:category]
 		category_id = Category.find_by_name(params[:category]).id
 		render :json => Interest.find_all_by_category_id(category_id).to_json(:methods => :category_name)
@@ -28,8 +28,7 @@ class InterestsController < ApplicationController
   end
 
   def list
-
-	@interests = Interest.all
+    @interests = Interest.all
   end
 
   def show

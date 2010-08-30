@@ -1,2 +1,0 @@
-class CrimesController < ApplicationController
-end

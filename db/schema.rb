@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100106122858) do
+ActiveRecord::Schema.define(:version => 20100830072306) do
 
   create_table "buildings", :force => true do |t|
     t.string   "name"
@@ -45,6 +45,11 @@ ActiveRecord::Schema.define(:version => 20100106122858) do
     t.integer  "category_id"
   end
 
+  create_table "people", :force => true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "routes", :force => true do |t|
     t.integer "agency_id"
     t.string  "route_short_name"
@@ -54,6 +59,21 @@ ActiveRecord::Schema.define(:version => 20100106122858) do
     t.string  "route_url"
     t.string  "route_color"
     t.string  "route_text_color"
+  end
+
+  create_table "social_categories", :force => true do |t|
+    t.string   "title"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "social_links", :force => true do |t|
+    t.string   "title"
+    t.string   "url"
+    t.string   "network"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "social_category_id"
   end
 
   create_table "stop_times", :force => true do |t|

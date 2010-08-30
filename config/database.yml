@@ -7,14 +7,10 @@
 #   timeout: 5000
   
 development:
-    adapter: mysql
-    encoding: utf8
-    database: uhguide
+    adapter: sqlite3
+    database: db/development.sqlite3
     pool: 5
-    username: uhguide
-    password: TG2bsVp2cMC9qJLr
-    socket: /var/run/mysqld/mysqld.sock
-    host: localhost
+    timeout: 5000
 
 
 # Warning: The database defined as "test" will be erased and
@@ -27,7 +23,11 @@ test:
   timeout: 5000
 
 production:
-  adapter: sqlite3
-  database: db/production.sqlite3
+  adapter: mysql
+  encoding: utf8
+  database: uhguide
   pool: 5
-  timeout: 5000
+  username: uhguide
+  password: TG2bsVp2cMC9qJLr
+  socket: /var/run/mysqld/mysqld.sock
+  host: localhost
