@@ -18,6 +18,28 @@ class Interest < ActiveRecord::Base
 		end
 	end
 
+  def self.tweets
+    url = "http://search.twitter.com/search.json?geocode=29.72072515%2C-95.34287452%2C21km&rpp=100"
+    
+    tweets = []
+    JSON.parse(open(url).read)['results'].each do |tweet|
+    	
+  	  tweets << { :name => "@#{tweet['from_user']}", 
+           :description => CGI.unescapeHTML(tweet["text"]), 
+           :marker_icon => "marker_info.png",
+           :picture => "nil",
+           :latitude => 0,
+           :longitude => 0,
+           :created_at => "2009-11-22T20:17:30Z",
+           :url => "http://twitter.com/#{tweet['from_user']}/status/#{tweet['id']}",
+           :category_name => "Twitter"
+         }
+      }
+  	end
+    
+    tweets
+  end
+  
   def self.stops
     stops = Array.new
     Stop.all.each do |stop|
