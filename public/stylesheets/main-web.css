@@ -1,0 +1,619 @@
+/***********************************************************************
+	Official UNIVERSITY OF HOUSON main web stylesheet.  
+	This stylesheet is imported into official UH temmplate stylesheets.
+	It is not intended to be directly referenced by HTML pages.  
+	Created: July 2007, by the IT Web Technologies Group.  
+	Last Updated: August 2007
+
+ CONTENTS: 
+
+ 	CLASSES
+	---------
+	article-list, date, formlet, intro-image, link-list*, news, right, skinny, skip-nav, spiff *, subtitle, want-to, controls
+	
+	HTML TAGS
+	---------
+	html, h1-4, p, ul, ol, li, dd, dt, td, th, label, a, em, acronym, abbr
+		
+ 	IDs
+	---------
+	address, breadcrumb, columns, content-well, footer*, inset-box-*, Spiff filler
+	
+/************************************************************************/
+
+@import url('/css/footer.css');
+
+
+/*****************************************
+
+                  CLASSES
+				   
+*****************************************/
+
+/* ========      ARTICLE-LIST    ======== */
+
+
+.article-list p {
+	margin: 2px 0px 15px 0px; 
+	
+	}
+
+
+/* ========      DATE    ======== */
+
+.date {
+	font-style: italic;
+	font-family:"Century Old Style", "Times New Roman";
+	white-space: nowrap;
+	}
+
+
+/* ========      FORMLET    ======== */
+
+.formlet {
+	background-color: #E8E8E8;
+	background-image:url(/images/bg-formlet.gif);
+	background-repeat: no-repeat;
+	margin: 0 0 15px 0;
+	padding: 0;
+	width: 235px;
+	}
+	
+.formlet-top {
+	background: url(/images/bg-formlet-top.gif);
+	background-repeat: no-repeat;
+	margin:0px;
+	}
+	
+.formlet-bottom {
+	background-image: url(/images/bg-formlet-bottom.gif);
+	background-position: bottom;
+	background-repeat: no-repeat;
+	padding: 0 0 15px 0;
+	}
+
+.formlet h3 {
+	background: url(/images/bg-formlet-heading.jpg);
+	border-bottom: #FFF 1px solid;
+	font-size: 140%;
+	padding: 10px;
+	}
+	
+.formlet h4, .formlet p, .formlet ul, .formlet ol {
+	margin: 10px;
+	}
+	
+#content-well .formlet label {
+		display: block;
+		float:none;
+	}
+
+	
+/* ========      INTRO-IMAGE    ======== */
+
+.intro-image{
+	float: left;
+	margin: 0 15px 15px 0;
+	width: auto;
+	overflow: hidden;
+	}
+.intro-image .caption{
+    clear: left;
+    margin: 8px;
+    font-style: italic;
+}
+	
+/* ========      LINK-LIST    ======== */
+
+.link-list li{
+	list-style-image: url(/images/arrow-on-white.gif);
+	}
+	
+.link-list li a{ color: #666; }
+.link-list li a:hover, .link-list li a:active {	color: #C00; }
+		
+	
+.link-list-alt {
+	background-image: url(/images/bg-horizontal-lt-gray-fade.jpg);
+	background-repeat:repeat-y;
+	padding: 0 0 0 3px;
+	}
+
+.link-list-alt li{
+	background: transparent url(/images/arrow-on-white.gif);
+	background-repeat: no-repeat;
+	background-position: 0px 8px;
+	list-style-type: none;
+	padding: 2px 4px 1px 10px;
+	border-top: #CCC 1px solid;
+	}
+.link-list-alt li a{ color: #333; }
+.link-list-alt li a:hover, .link-list li a:active {	color: #C00; }
+	
+.link-list-image {
+	float:left;	
+	margin: 0 18px 0 10px;
+	}
+	
+/* ========      NEWS    ======== */	
+
+.news-controls{
+	margin: 10px 0 0 0;
+	padding: 0 0 0 35px;
+	}
+
+a.news-controls {
+	color: #C00;
+	background: #efefef;
+	padding: 1px 10px;
+	text-transform: uppercase;
+	border: 1px #BEBEBE solid;
+	font-weight: bold;
+	margin: 0 0 0 6px;
+	}
+
+a.news-controls:hover{
+	text-decoration: none;
+	border: 1px #C00 solid;
+	}
+
+/* ========      RIGHT     ======== */
+.right {text-align: right}
+
+/* ========      SKINNY    ======== */
+
+.skinny {
+	padding: 0px;
+	margin:0;
+	}
+	
+		
+/* ========      SKIP-NAV    ======== */
+
+.skip-nav {
+	display: none;
+	}
+	
+
+/* ========      SPIFF    ======== */
+
+.spiff {
+	background-color: #FFF;
+ 	border: #666 1px solid;
+ 	width: 216px;
+	
+	}
+
+.spiff h2 {
+	background: #5c5c5c url('/images/navbarbg.jpg');
+	background-repeat: repeat-x;
+	background-position: 0px -5px;
+	border: none;
+	font-weight: bold;
+	margin-top: 0px;
+	padding: 2px 10px 2px 10px;	
+	text-transform: uppercase;
+	font-size: 131%;
+	}
+	
+.spiff h2 a { 
+	color: #fff; 
+	}
+	
+.spiff h3, .spiff h4 {	
+	font-weight: bold;
+	padding: 5px 6px 2px 6px;
+	margin: 0;
+	}
+		
+	
+.spiff p { 
+	padding: 3px 6px 6px 6px;
+	margin: 0;
+	}
+/* ========      SUBTITLE    ======== */
+
+.subtitle {
+	display: block;
+	font-size: 65%;
+	color: #777;
+	margin-bottom: 1.5em;
+	}
+
+
+
+
+/* ========      WANT-TO    ======== */
+
+.want-to {
+	background-color: #FCF5C1;
+	background-image: url(/images/bg-want-to-bottom.gif);
+	background-position: bottom;
+	background-repeat: no-repeat;
+	margin: 0 0 15px 0;
+	padding: 0 0 10px 0;
+	width: 235px;
+	}
+	
+.want-to h3 {
+	background: url(/images/bg-want-to-heading.jpg);
+	background-repeat: repeat-y;
+	border-bottom: #FFF 1px solid;
+	font-size: 140%;
+	padding: 10px;
+	}
+.want-to ul {
+	list-style-image: url(/images/arrow-on-yellow.gif);
+	margin: 10px;
+	}
+
+.want-to a {
+	color: #303030;
+	}
+.want-to a:active, .want-to a:hover {
+	color: #C00;
+	}
+.want-to h2 {
+	text-transform: uppercase;
+	font-size: 140%;
+	color: #333;
+	margin: 10px;
+	}
+
+/* ========      WANT-TO    ======== */
+
+.controls{
+	margin: 10px 0 0 0;
+	padding: 0 0 0 35px;
+	overflow: hidden;
+}
+
+.controls a{
+	display: block;
+	float: right;
+	color: #cc0000;
+	background: #efefef;
+	padding: 1px 10px;
+	text-transform: uppercase;
+	border: 1px #999999 solid;
+	font-weight: bold;
+	margin: 0 0 0 6px;
+	font-size: 88%;
+}
+
+.controls a:hover{
+text-decoration: none;
+border: 1px #cc0000 solid;
+}
+
+.controls a.button{
+	padding: 1px 2px;
+}
+
+.controls a.button:hover{
+}
+
+/*****************************************
+
+               HTML TAGS  
+				   
+*****************************************/
+
+html * {
+	color: #666;
+	font-family: Arial, Helvetica, Sans-serif;
+	margin: 0px;
+	padding: 0px;
+	} 
+
+a {
+	color: #C00;
+	font-weight: bold;
+	text-decoration: none;
+	}
+
+a:hover, a:active {	
+	text-decoration: underline;	
+	}
+
+a img { 
+	border-style: none; 
+	}
+
+acronym, abbr{
+	color: inherit;
+	font-size: inherit;
+	border: 0px #fff none;
+}
+
+dd { 
+	margin: 0 0 10px 20px;
+	}
+	
+dt {
+	font-weight: bold;
+	padding: 10px 0 0 0;
+	}
+	
+em {
+	font-family: Arial, Helvetica, Sans-serif;
+	font-style: italic;
+	}
+	
+	
+h1 {
+	color: #000;
+	font-weight: normal;
+	margin: 0 0 5px 0;
+	}
+	
+h2 {
+	color: #000;
+	font-weight: normal;
+	}
+	
+h3 {
+	color: #333;
+	font-weight: normal;
+	padding: 20px 0 0 0;
+	text-transform:uppercase;
+	}
+	
+h4 { 
+	margin: 10px 0 0 0; 
+	}
+
+li { 
+	margin: 5px 0 5px 0; 
+	}
+	
+li, dt, dd, p td, th, label { 
+	line-height: 1.5em; 
+	}
+	
+p {	
+	margin: 10px 0 10px 0; 
+	}
+
+
+table {
+	width:90%; 
+	border:#DDD 1px solid;
+	border-width: 1px 1px 0 1px;
+	margin:10px auto;
+	padding:0;
+	}
+	
+table caption {
+	font-weight:bold;
+	}
+	
+table.center th, table.center td, td.center, th.center, tr.center  {text-align:center;}
+table.left th, table.left, td.left, th.left, tr.left {text-align:left;}
+table.right th, table.right, td.right, th.right, tr.right {text-align:right;}
+
+table th {
+ 	background: #FFF url(/images/bg-small-yellow-fade.jpg) bottom repeat-x;
+	color: #000;
+	margin:0;
+	padding:2px;
+	border-bottom:1px solid #666;
+	}
+
+table td {
+	padding:2px;
+ 	border:0;
+	margin:0;
+	border-bottom:1px solid #CCC;
+	}
+table td.scope {
+ 	text-align:left;
+	background:#FCF5C0;
+	}
+table th.alt-th{
+	background-color:#FFF;
+	}
+
+ul, ol{	
+	padding: 0 0 0 16px; 
+	}
+
+
+/*****************************************
+
+                   IDS  
+				   
+*****************************************/
+
+
+/* ========      ADDRESS    ======== */
+
+#address a {
+	margin: 0 10px 0 10px;
+	}
+	
+	
+	
+	
+	
+/* ========      BREADCRUMB    ======== */
+
+#breadcrumb {
+	color: #333333;
+	font-size: 72%;
+	line-height: 72%;
+	margin: 0 auto 1em auto;
+	padding: 0;
+	text-transform: uppercase;
+	width: 945px;
+	clear: both;
+	}
+
+#breadcrumb a {
+	color: #666666;
+	font-weight: normal;
+	text-decoration: none;
+	}
+
+#breadcrumb a:hover {
+	text-decoration: underline;
+	}
+
+#breadcrumb img {
+	vertical-align: top;
+	}
+	
+	
+	
+	
+	
+/* ========      COLUMNS    ======== */
+	
+
+#right-column .spiff {
+	border-color:#FFF;
+	width: 190px;
+	}
+
+#right-column .spiff img{
+	width: 190px;
+	}
+
+
+/* ========      CONTENT WELL    ======== */
+
+#content-well {
+	clear: both;
+	margin: 0 auto 10px auto;
+	overflow: hidden;
+	padding: 0;
+	width: 945px;
+	}
+	
+	
+#content-well form {
+	background-color: #E8E8E8;
+	background-image:url(/images/bg-formlet.gif);
+	background-repeat: no-repeat;
+	padding: 10px 7px;
+	border: #CCC 1px solid;
+
+	}
+
+#content-well form ol {
+	list-style:none inside;
+	padding: 0;
+	margin: 0;
+	}
+
+#content-well form ol li {
+	margin: 0;
+	padding: 4px 3px 5px 3px;
+	border: 1px;
+	border-color: #fff;
+	border-style: none none solid none;
+	}
+#content-well form ol li.required label, #content-well form ol fieldset.required legend {
+	font-weight: bold;
+	color: #000;
+	}
+
+#content-well form ol li.required label:before, #content-well form ol fieldset.required legend:before, #content-well form ol li.invalid label:before, #content-well form ol li.invalid fieldset legend:before {
+	content:"*";
+	}
+#content-well form ol li.invalid{
+ background: #FCF5C1;
+ border: 1px;
+ border-color: #999;
+ border-style: solid;
+}
+#content-well form ol li.invalid *{
+	color: #cc0000;
+	font-weight: bold;
+}
+
+#content-well form ol li.invalid fieldset label:after, #content-well form ol li.invalid fieldset label:before{
+	content: "";
+}
+
+#content-well form h2{
+	border: none;
+	margin: 0px;
+	padding: 0 3px;
+	}
+	
+#content-well form label{
+	display: block;
+	width: 150px;
+	float: left;
+	clear: left;
+	margin: 0 5px 0 0;
+	line-height: 1.1em;
+	}
+	
+#content-well .note {
+	font-style: italic;
+	color: #888;
+	font-size: 95%;
+	font-weight: normal;
+	}
+
+	
+#content-well input, #content-well textarea, #content-well button, #content-well select{	
+	}
+	
+#content-well fieldset {
+	border: none;
+	}
+	
+#content-well fieldset ol{
+	margin:5px 5px 5px 155px;
+	}
+	
+#content-well fieldset li {
+	border: none;
+	padding:0;
+	margin:0;
+	}
+	
+#content-well fieldset label{
+		display: inline;
+		width:auto;
+		float:none;
+		clear: none;
+	}
+	
+
+/* ========      INSET BOX    ======== */
+
+#inset-box-header, #inset-box-footer{
+	background-repeat: no-repeat;
+	height: 21px;
+	margin: 0;
+	padding: 0;
+	width: 697px;
+	}
+	
+	
+	
+
+
+
+/* ========     SPIFF FILLER    ======== */
+#spiff-filler {
+	background: #ffffff;
+	border: 1px #000000 solid;
+	height: 300px;
+	margin: 10px;
+	width: 220px;
+	}
+
+#spiff-filler-right {
+	background: #ffffff;
+	border: 1px #000000 solid;
+	height: 265px;
+	margin: 10px 0 10px 3px;
+	overflow: auto;
+	padding: 0;
+	width: 190px;
+	}

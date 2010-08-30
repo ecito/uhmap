@@ -1,0 +1,44 @@
+/* ========      styles specific to forms on campus map and building pages    ======== */
+
+select {
+	width: 99%;
+	font-size: 10px;
+}
+
+option {
+	font-size: 10px;
+}
+
+.bldglist {
+	font-size: 10px;
+}
+
+#left-column-fade div{
+	padding-left: 2px;
+}
+
+#right-column-items p{
+	color: #EEE;
+	}
+	
+#right-column-items p strong {
+	color: #FFF;
+	text-transform: uppercase;
+	font-weight: normal;
+	}
+	
+#right-column-items p a {
+	color: #FFD;
+	text-decoration:underline;
+	}
+/************************************************************************/
+
+#banner-wrapper{
+    background: #757575 url(/images/subpage/news-uh-flag.jpg);
+    background-repeat: no-repeat;
+    background-position: 476px 6px;
+		}
+
+#inset-box-items form{
+	background: #efefef; 
+}

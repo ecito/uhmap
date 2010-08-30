@@ -1,0 +1,6 @@
+<h1>Editing interest</h1>
+
+<%= render :partial => "form", :locals => { :button_label => "Edit interest", :interest => @interest } %>
+
+<%= link_to 'Show', :action => :show, :id => @interest %> |
+<%= link_to 'Back', :action => :list %>

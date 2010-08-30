@@ -1,0 +1,231 @@
+/***********************************************************************
+	Official UNIVERSITY OF HOUSON stylesheet for sub pages.  
+	This template stylesheet should be attached to all official UH 3-column (normal layout) subpages (tertiary pages).  
+	Created: July 2007, by the IT Web Technologies Group.  
+	Last Updated: July 2007
+	
+	CONTENTS:
+		IDS 
+		----
+		COLUMN (center),  COLUMN (right),  INSET BOX (header),  INSET BOX (footer),  WRAPPER (photo),  WRAPPER (inset box)
+		
+		CLASSES
+		----
+		TACTICAL, HEADER
+		
+/************************************************************************/
+
+@import url(fonts-min.css);
+@import url(header.css);
+@import url(main-web.css);
+@import url(main-subpage.css);
+
+
+/***********************************************************************
+
+							IDs
+	
+/************************************************************************/
+
+	
+
+/* ========      COLUMNS    ======== */
+#inset-box-columns{
+	background: transparent url("/images/mask-column-sides.gif");
+	overflow: auto;
+	padding: 1px 6px 0 6px;
+	width: 697px;
+	}
+
+#center-column-items{
+	color: #666666;
+	font-size: 100%;
+	margin: 0 0 0 0;
+	overflow: auto;
+	padding: 10px 20px 15px 20px;
+	width: 422px;
+	}
+
+#center-column-items p {
+	line-height: 167%;
+	margin: 0 0 20px 0;
+	}
+	
+#right-column {
+	margin: 10px 0 0 240px;
+	}
+
+#right-column-items{
+	float: right;
+	margin: 0 0 0 0;
+	overflow: auto;
+	padding: 200px 10px 0 0;
+	width: 206px;
+	}
+
+
+
+/* ========      INSET BOX    ======== */
+
+#inset-box-header{
+	background: transparent url("/images/mask-column-top.gif");
+	}
+
+#inset-box-footer{
+	background: transparent url("/images/mask-column-bottom.gif");
+}
+	
+	
+	
+	
+/* ========       WRAPPERS     ======== */
+
+#photo-wrapper {
+	margin: 0 0 0 0;
+	overflow: hidden;
+	padding: 0;
+	width: 697px;
+	}
+	
+#inset-box-wrapper {
+	background: transparent url("/images/mask-narrow-top.gif");
+	}
+	
+	
+/* ========       DIRECTORY SEARCH CONTENT     ======== */
+
+
+#search-form {
+	margin: 0 auto;
+	
+	width: 100%;
+	background: #fff;
+	color: #000;
+	font-size:  12px;
+	border-collapse: collapse;
+	border: 0;
+}
+
+#search-form td{
+	border-collapse: collapse;
+	border: 0;
+	
+	color: #000;
+	font-size: 12px;
+}
+
+#search-form td.label{
+	text-align: right;
+	font-weight: bold;
+	width: 29%;
+
+}
+#search-form td.title{
+	text-align: center;
+	font-weight: bold;
+	
+
+}
+
+#search-form td.center{
+	text-align: center;
+	
+
+}
+
+#search-form td.content{
+	text-align: left;
+	width: 200px;
+
+}
+
+#search-form td.tips{
+	text-align: left;
+	width: 50px;
+}
+
+#search-form .formComments{
+	color: #999;
+}
+
+#search-form .adsearch{
+	font-size: 10px;
+	
+}
+
+#search-form select{
+	width: 200px;
+	color: #000;
+	font-size: 12px;
+}
+
+#search-form input.text{
+	font-size: 12px;
+	color: #000;
+	width: 200px;
+}
+
+#search-form input.submit{
+	font-size: 12px;
+	color: #000;
+	width: 75px;
+}
+
+#search-form td.head{
+	font-size: 14px;
+	font-weight: bold;
+	border-bottom: 1px solid #333;
+
+}
+
+#search-form td.list{
+
+	border-bottom: 1px solid #ccc;
+	text-align: left;
+	height: 15px;
+}
+
+#search-form td.listLabel{
+
+	border-bottom: 1px solid #ccc;
+	text-align: left;
+	height: 15px;
+	width: 25%;
+	font-weight: bold;
+}
+
+#advancedOptions div{
+margin: 5px;
+display: none;
+background: #fff;
+}	
+
+/***********************************************************************
+
+							CLASSES
+	
+************************************************************************/
+
+/* ========       TACTICAL     ======== */
+
+ul.tactical, #center-column-items ul.tactical{
+	width: 400px;
+	}
+
+/* ========      borders    ======== */
+
+h2.border-top-yellow {
+	border-top: #000 1px dashed;
+	margin: 20px 0px 0px 0px;
+	padding: 10px 0px 6px 10px;
+	background-color:#FCF5C1;
+	}
+
+/* ========      HEADER CLASSES    ======== */
+
+.header-yellow {
+	background-color:#FCF5C1;
+	 padding-left: 10px; 
+	 padding-bottom: 5px;
+	 padding-top: 5px;
+	}

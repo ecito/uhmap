@@ -1,0 +1,12 @@
+DirectoryIndex index.php
+
+
+RewriteEngine on
+RewriteBase /
+RewriteRule index.html$ /index.php 
+#RewriteRule ^/$ http://uhcamp.us.to/blog/ [R,L]
+
+RewriteRule ^app/?$ http://bit.ly/8F6UAC
+
+
+

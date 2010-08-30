@@ -1,0 +1,2 @@
+class BustimesController < ApplicationController
+end

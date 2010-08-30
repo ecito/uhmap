@@ -1,0 +1,226 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Dale Mugford and Duane Storey
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/wordtwit\n"
+"POT-Creation-Date: 2009-04-12 06:09+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ajax/table.php:9
+msgid "Original URL"
+msgstr ""
+
+#: ajax/table.php:10
+msgid "Short URL"
+msgstr ""
+
+#: ajax/table.php:11
+msgid "Views"
+msgstr ""
+
+#: html/options.php:33
+msgid "Version"
+msgstr ""
+
+#: html/options.php:39
+msgid "Updates &amp; Support"
+msgstr ""
+
+#: html/options.php:41
+msgid ""
+"BraveNewCode.com entries tagged 'WordTwit'. This list updates to provide you "
+"with the latest information about our plugin's development."
+msgstr ""
+
+#: html/options.php:43
+msgid ""
+"For WordTwit support, please visit the official <a href=\"http://support."
+"bravenewcode.com/forum/wordtwit\"  target=\"_blank\">WordTwit Forum</a>"
+msgstr ""
+
+#: html/options.php:60
+msgid "Donate to WordTwit"
+msgstr ""
+
+#: html/options.php:62
+msgid ""
+"WordTwit represents many hours of hard work, and requires constant "
+"interaction with members from the community to make it a success. "
+msgstr ""
+
+#: html/options.php:64
+msgid ""
+"If you'd like to support the WordTwit project, please consider <a href="
+"\"https://www.paypal.com/cgi-bin/webscr?cmd=_donations&amp;business=paypal%"
+"40bravenewcode%2ecom&amp;item_name=WordTwit%20Beer%20Fund&amp;"
+"no_shipping=1&amp;tax=0&amp;currency_code=CAD&amp;lc=CA&amp;bn=PP%"
+"2dDonationsBF&amp;charset=UTF%2d8\">donating to the WordTwit beer fund</a>."
+msgstr ""
+
+#: html/options.php:73
+msgid "Twitter Profile"
+msgstr ""
+
+#: html/options.php:75
+msgid ""
+"The following information is associated with the Twitter credentials "
+"supplied below."
+msgstr ""
+
+#: html/options.php:86
+msgid "followers"
+msgstr ""
+
+#: html/options.php:87
+msgid "No Description On Account"
+msgstr ""
+
+#: html/options.php:91
+msgid ""
+"Sorry, the credentials you have supplied are invalid.  <br />Please re-enter "
+"them again below."
+msgstr ""
+
+#: html/options.php:103
+msgid "URL Shortening"
+msgstr ""
+
+#: html/options.php:105
+#, php-format
+msgid ""
+"As of WordTwit 2.0, you can create customized shortened URLs for links.  "
+"These links will be prefixed with <strong>%s</strong>."
+msgstr ""
+
+#: html/options.php:107
+msgid ""
+"To enable this behavior, select <strong>local</strong> as your URL "
+"shortening method."
+msgstr ""
+
+#: html/options.php:108
+msgid "Link Statistics"
+msgstr ""
+
+#: html/options.php:109
+msgid "Most Popular Links"
+msgstr ""
+
+#: html/options.php:110
+msgid "Newest Links"
+msgstr ""
+
+#: html/options.php:116
+msgid "Shortening Method"
+msgstr ""
+
+#: html/options.php:119
+msgid "Local"
+msgstr ""
+
+#: html/options.php:126
+msgid "Create a New URL"
+msgstr ""
+
+#: html/options.php:132
+msgid "Use Alternate Domain"
+msgstr ""
+
+#: html/options.php:136
+msgid "Enable banner on external sites"
+msgstr ""
+
+#: html/options.php:139
+msgid "Dynamically convert all content links into short URLs"
+msgstr ""
+
+#: html/options.php:150
+msgid "General Options"
+msgstr ""
+
+#: html/options.php:151
+msgid ""
+"WordTwit allows you to publish a Twitter tweet whenever a new blog entry is "
+"published.  To enable it, simply enter your Twitter username and password."
+msgstr ""
+
+#: html/options.php:153
+msgid ""
+"You can also customize the message Twitter posts to your account by using "
+"the \"message\" field below.  You can use [title] to represent the title of "
+"the blog entry, and [link] to represent the permalink."
+msgstr ""
+
+#: html/options.php:158
+msgid "Username"
+msgstr ""
+
+#: html/options.php:161
+msgid "Password"
+msgstr ""
+
+#: html/options.php:164
+msgid "Message"
+msgstr ""
+
+#: html/options.php:177
+msgid "Tag/Category Options"
+msgstr ""
+
+#: html/options.php:178
+msgid ""
+"The default behaviour of WordTwit is to publish all new posts as Tweets to "
+"your Twitter stream."
+msgstr ""
+
+#: html/options.php:180
+msgid ""
+"WordTwit can also be configured to include/exclude entries that have a "
+"specific tag or category. "
+msgstr ""
+
+#: html/options.php:184
+msgid "Associated Tags/Categories <small>(comma separated)</small>"
+msgstr ""
+
+#: html/options.php:188
+msgid "Reverse behaviour <small>(exclude the tags/categories above)</small>"
+msgstr ""
+
+#: html/options.php:200
+msgid "WordTwit Logo Bird by Dellustrations"
+msgstr ""
+
+#: html/options.php:200
+msgid "Twitter Bird Photo by Chris Wallace"
+msgstr ""
+
+#. Plugin Name of an extension
+msgid "WordTwit"
+msgstr ""
+
+#. Plugin URI of an extension
+msgid "http://www.bravenewcode.com/wordtwit"
+msgstr ""
+
+#. Description of an extension
+msgid "Generates Twitter Updates from Blog Postings"
+msgstr ""
+
+#. Author of an extension
+msgid "Dale Mugford and Duane Storey"
+msgstr ""
+
+#. Author URI of an extension
+msgid "http://www.bravenewcode.com"
+msgstr ""

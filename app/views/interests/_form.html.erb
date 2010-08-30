@@ -1,0 +1,36 @@
+<% form_for(interest) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :category %><br />
+    <%= f.select("category_id", Category.all.collect {|p| [ p.name, p.id ] }) %>
+  </p>
+  <p>
+    <%= f.label :marker_icon %><br />
+    <%= f.text_field :marker_icon %>
+  </p>
+  <p>
+    <%= f.label :latitude %><br />
+    <%= f.text_field :latitude %>
+  </p>
+  <p>
+    <%= f.label :longitude %><br />
+    <%= f.text_field :longitude %>
+  </p>
+  <p>
+    <%= f.label :url %><br />
+    <%= f.text_field :url %>
+  </p>
+  <p>
+    <%= f.label :description %><br />
+    <%= f.text_field :description %>
+  </p>
+  <p>
+    <%= f.submit button_label %>
+  </p>
+<% end %>
+

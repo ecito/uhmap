@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  stop_name: MyString
+  stop_desc: MyString
+  stop_lat: MyString
+  stop_lon: MyString
+  zone_id: MyString
+  stop_url: MyString
+
+two:
+  stop_name: MyString
+  stop_desc: MyString
+  stop_lat: MyString
+  stop_lon: MyString
+  zone_id: MyString
+  stop_url: MyString

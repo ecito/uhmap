@@ -1,0 +1,38 @@
+<p>
+  <b>Name:</b>
+  <%=h @building.name %>
+</p>
+
+<p>
+  <b>Number:</b>
+  <%=h @building.number %>
+</p>
+
+<p>
+  <b>Address:</b>
+  <%=h @building.address %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%=h @building.description %>
+</p>
+
+<p>
+  <b>Latitude:</b>
+  <%=h @building.latitude %>
+</p>
+
+<p>
+  <b>Longitude:</b>
+  <%=h @building.longitude %>
+</p>
+
+<p>
+  <b>Code:</b>
+  <%=h @building.code %>
+</p>
+
+
+<%= link_to 'Edit', edit_building_path(@building) %> |
+<%= link_to 'Back', buildings_path %>

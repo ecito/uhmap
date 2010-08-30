@@ -1,0 +1,38 @@
+<p>
+  <b>Name:</b>
+  <%=h @interest.name %>
+</p>
+
+<p>
+  <b>Category:</b>
+  <%=h @interest.category.name %>
+</p>
+
+<p>
+  <b>Marker icon:</b>
+  <%=h @interest.marker_icon %>
+</p>
+
+<p>
+  <b>Latitude:</b>
+  <%=h @interest.latitude %>
+</p>
+
+<p>
+  <b>Longitude:</b>
+  <%=h @interest.longitude %>
+</p>
+
+<p>
+  <b>Url:</b>
+  <%=h @interest.url %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%=h @interest.description %>
+</p>
+
+
+<%= link_to 'Edit', edit_interest_path(@interest) %> |
+<%= link_to 'Back', :action => :list %>

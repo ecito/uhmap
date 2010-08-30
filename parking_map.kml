@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+<Document>
+  <name>U of H parking lot and traffic status</name>
+  <description><![CDATA[ This map is maintained by the University of Houston Department of Public Safety for use during peak traffic and parking times.
+
+]]></description>
+  <Style id="style19">
+    <IconStyle>
+      <Icon>
+        <href>http://www.uh.edu/police/graphics/Parking_Map_50.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style16">
+    <IconStyle>
+      <Icon>
+        <href>http://www.uh.edu/police/graphics/Clipboard.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style24">
+    <IconStyle>
+      <Icon>
+        <href>http://www.uh.edu/police/graphics/Parking_Map_25.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style4">
+    <IconStyle>
+      <Icon>
+        <href>http://www.uh.edu/police/graphics/Parking_Map_50.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style10">
+    <IconStyle>
+      <Icon>
+        <href>http://www.uh.edu/police/graphics/Parking_Map_Empty.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style5">
+    <IconStyle>
+      <Icon>
+        <href>http://www.uh.edu/police/graphics/Parking_Map_25.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style14">
+    <IconStyle>
+      <Icon>
+        <href>http://www.uh.edu/police/graphics/Parking_Map_25.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style12">
+    <IconStyle>
+      <Icon>
+        <href>http://www.uh.edu/police/graphics/Parking_Map_25.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style15">
+    <IconStyle>
+      <Icon>
+        <href>http://www.uh.edu/police/graphics/Parking_Map_Empty.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style18">
+    <IconStyle>
+      <Icon>
+        <href>http://www.uh.edu/police/graphics/Parking_Map_Empty.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style2">
+    <IconStyle>
+      <Icon>
+        <href>http://www.uh.edu/police/graphics/Parking_Map_Empty.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style11">
+    <IconStyle>
+      <Icon>
+        <href>http://www.uh.edu/police/graphics/Parking_Map_Empty.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style13">
+    <IconStyle>
+      <Icon>
+        <href>http://www.uh.edu/police/graphics/Parking_Map_Empty.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style3">
+    <IconStyle>
+      <Icon>
+        <href>http://www.uh.edu/police/graphics/Parking_Map_25.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style1">
+    <IconStyle>
+      <Icon>
+        <href>http://www.uh.edu/police/graphics/Parking_Map_50.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style23">
+    <IconStyle>
+      <Icon>
+        <href>http://www.uh.edu/police/graphics/Parking_Map_50.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style9">
+    <IconStyle>
+      <Icon>
+        <href>http://www.uh.edu/police/graphics/Parking_Map_50.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style17">
+    <IconStyle>
+      <Icon>
+        <href>http://www.uh.edu/police/graphics/Parking_Map_Empty.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style7">
+    <IconStyle>
+      <Icon>
+        <href>http://www.uh.edu/police/graphics/Parking_Map_Empty.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style6">
+    <IconStyle>
+      <Icon>
+        <href>http://www.uh.edu/police/graphics/Parking_Map_Empty.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style25">
+    <IconStyle>
+      <Icon>
+        <href>http://www.uh.edu/police/graphics/Parking_Map_Empty.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style21">
+    <IconStyle>
+      <Icon>
+        <href>http://www.uh.edu/police/graphics/Parking_Map_25.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style22">
+    <IconStyle>
+      <Icon>
+        <href>http://www.uh.edu/police/graphics/Parking_Map_50.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style8">
+    <IconStyle>
+      <Icon>
+        <href>http://www.uh.edu/police/graphics/Parking_Map_75.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style20">
+    <IconStyle>
+      <Icon>
+        <href>http://www.uh.edu/police/graphics/Parking_Map_Full.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Placemark>
+    <name>1A</name>
+    <description><![CDATA[<div dir="ltr">Lot 1A </div>]]></description>
+    <styleUrl>#style19</styleUrl>
+    <Point>
+      <coordinates>-95.340775,29.716757,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Read Me</name>
+    <description><![CDATA[<div dir="ltr">No paper permit ALLOW only hard copy permits are allowed to park in the East Parking Garage and Welcome Center Garage. </div>]]></description>
+    <styleUrl>#style16</styleUrl>
+    <Point>
+      <coordinates>-95.344589,29.721676,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>2B</name>
+    <description><![CDATA[<div dir="ltr">Lot 2B </div>]]></description>
+    <styleUrl>#style24</styleUrl>
+    <Point>
+      <coordinates>-95.338043,29.716047,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>4A</name>
+    <description><![CDATA[<div dir="ltr">Lot 4A .<br>Economy/Outlying <br><br></div>]]></description>
+    <styleUrl>#style4</styleUrl>
+    <Point>
+      <coordinates>-95.341072,29.715227,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>8A</name>
+    <description><![CDATA[<div dir="ltr">Economy/Outlying </div>]]></description>
+    <styleUrl>#style10</styleUrl>
+    <Point>
+      <coordinates>-95.347725,29.715582,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>9C</name>
+    <description><![CDATA[<div dir="ltr">Economy/Outlying </div>]]></description>
+    <styleUrl>#style5</styleUrl>
+    <Point>
+      <coordinates>-95.346878,29.717352,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>11A</name>
+    <description><![CDATA[<div dir="ltr">.Lot 11A </div>]]></description>
+    <styleUrl>#style14</styleUrl>
+    <Point>
+      <coordinates>-95.349052,29.720818,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>12A</name>
+    <description><![CDATA[<div dir="ltr">Economy/Outlying lot on the Red Shuttle route<br></div>]]></description>
+    <styleUrl>#style12</styleUrl>
+    <Point>
+      <coordinates>-95.351845,29.720055,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>12B</name>
+    <description><![CDATA[<div dir="ltr">Economy/Outlying lot<br><br></div>]]></description>
+    <styleUrl>#style15</styleUrl>
+    <Point>
+      <coordinates>-95.350899,29.721786,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>15D</name>
+    <description><![CDATA[<div dir="ltr">Student Parking </div>]]></description>
+    <styleUrl>#style18</styleUrl>
+    <Point>
+      <coordinates>-95.348839,29.723242,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>16B</name>
+    <description><![CDATA[<div dir="ltr">Student Parking </div>]]></description>
+    <styleUrl>#style2</styleUrl>
+    <Point>
+      <coordinates>-95.343216,29.726110,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>16D</name>
+    <description><![CDATA[<div dir="ltr">Student Lot </div>]]></description>
+    <styleUrl>#style11</styleUrl>
+    <Point>
+      <coordinates>-95.342102,29.727154,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>16E</name>
+    <description><![CDATA[<div dir="ltr">Economy/Outlying lot.<br>MacDonalds</div>]]></description>
+    <styleUrl>#style13</styleUrl>
+    <Point>
+      <coordinates>-95.344337,29.728086,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>18A</name>
+    <description><![CDATA[<div dir="ltr">Student Lot</div>]]></description>
+    <styleUrl>#style3</styleUrl>
+    <Point>
+      <coordinates>-95.340218,29.724861,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>19B</name>
+    <description><![CDATA[<div dir="ltr">Student Parking</div>]]></description>
+    <styleUrl>#style1</styleUrl>
+    <Point>
+      <coordinates>-95.338615,29.723148,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>20A</name>
+    <description><![CDATA[<div dir="ltr">Student Lot</div>]]></description>
+    <styleUrl>#style23</styleUrl>
+    <Point>
+      <coordinates>-95.337685,29.720930,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>20C</name>
+    <description><![CDATA[<div dir="ltr">Economy/Outlying lot </div>]]></description>
+    <styleUrl>#style9</styleUrl>
+    <Point>
+      <coordinates>-95.337456,29.718918,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>East Parking Garage</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style17</styleUrl>
+    <Point>
+      <coordinates>-95.336739,29.720474,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Parking Garage</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style7</styleUrl>
+    <Point>
+      <coordinates>-95.340065,29.718357,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Energy Research Park</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style6</styleUrl>
+    <Point>
+      <coordinates>-95.328156,29.717985,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Empty Placeholder</name>
+    <description><![CDATA[<div dir="ltr">DO NOT DELETE</div>]]></description>
+    <styleUrl>#style25</styleUrl>
+    <Point>
+      <coordinates>-95.476852,29.719812,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>25% icon</name>
+    <description><![CDATA[<div dir="ltr">DO NOT DELETE</div>]]></description>
+    <styleUrl>#style21</styleUrl>
+    <Point>
+      <coordinates>-95.471878,29.722048,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>50% Placeholder</name>
+    <description><![CDATA[<div dir="ltr">DO NOT DELETE</div>]]></description>
+    <styleUrl>#style22</styleUrl>
+    <Point>
+      <coordinates>-95.471024,29.724731,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>75% Placeholder</name>
+    <description><![CDATA[<div dir="ltr">DO NOT DELETE</div>]]></description>
+    <styleUrl>#style8</styleUrl>
+    <Point>
+      <coordinates>-95.472908,29.728310,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Full Placeholder</name>
+    <description><![CDATA[<div dir="ltr">DO NOT DELETE</div>]]></description>
+    <styleUrl>#style20</styleUrl>
+    <Point>
+      <coordinates>-95.471703,29.733229,0.000000</coordinates>
+    </Point>
+  </Placemark>
+</Document>
+</kml>

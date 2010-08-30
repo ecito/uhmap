@@ -1,0 +1,40 @@
+   <VirtualHost *:80>
+      ServerName uhcamp.us.to
+      ServerAlias www.uhcamp.us.to
+      DocumentRoot "/var/www/uhmap/public"
+      CustomLog /var/www/uhmap/log/access.log vhost_combined
+      <Directory "/var/www/uhmap/public">
+	AllowOverride all
+	Options -MultiViews
+	RailsBaseUri /var/www/uhmap
+	RailsEnv "development"
+      </Directory>
+	<Location /phpmyadmin>
+		PassengerEnabled off
+	</Location>
+	<Location /blog>
+		DirectoryIndex index.php
+		<IfModule mod_rewrite.c>
+			RewriteEngine On
+			RewriteBase /blog/
+			RewriteCond %{REQUEST_FILENAME} !-f
+			RewriteCond %{REQUEST_FILENAME} !-d
+			RewriteRule . /blog/index.php [L]
+		</IfModule>
+		PassengerEnabled off
+        </Location>
+   </VirtualHost>
+
+   <VirtualHost *:80>
+      ServerName uhcamp.us.to
+      ServerAlias www.uhcamp.us.to
+      DocumentRoot "/var/www/uhmap/public/project"
+      CustomLog /var/www/project/log/access.log vhost_combined
+        <Directory "/var/www/uhmap/public/project">
+         AllowOverride all
+        Options -MultiViews
+        RailsBaseUri /var/www/uhmap/public/project
+        RailsEnv "production"
+        </Directory>
+</VirtualHost>
+

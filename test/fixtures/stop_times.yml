@@ -1,0 +1,23 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  trip_id: 1
+  arrival_time: MyString
+  departure_time: MyString
+  stop_id: 1
+  stop_sequence: MyString
+  stop_headsign: MyString
+  pickup_type: MyString
+  drop_off_type: MyString
+  shape_dist_traveled: MyString
+
+two:
+  trip_id: 1
+  arrival_time: MyString
+  departure_time: MyString
+  stop_id: 1
+  stop_sequence: MyString
+  stop_headsign: MyString
+  pickup_type: MyString
+  drop_off_type: MyString
+  shape_dist_traveled: MyString

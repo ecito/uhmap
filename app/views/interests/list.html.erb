@@ -1,0 +1,32 @@
+<h1>Listing interests</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Category</th>
+    <th>Marker icon</th>
+    <th>Latitude</th>
+    <th>Longitude</th>
+    <th>Url</th>
+    <th>Description</th>
+  </tr>
+
+<% @interests.each do |interest| %>
+  <tr>
+    <td><%=h interest.name %></td>
+    <td><%=h interest.category.name if interest.category %></td>
+    <td><%=h interest.marker_icon %></td>
+    <td><%=h interest.latitude %></td>
+    <td><%=h interest.longitude %></td>
+    <td><%=h interest.url %></td>
+    <td><%=h interest.description %></td>
+    <td><%= link_to 'Show', :action => :show, :id => interest %></td>
+    <td><%= link_to 'Edit', :action => "edit", :id => interest %></td>
+    <td><%= link_to 'Destroy', :action=> :delete, :id => interest, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New interest', :action => "new" %>

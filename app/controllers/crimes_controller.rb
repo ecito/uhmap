@@ -1,0 +1,2 @@
+class CrimesController < ApplicationController
+end

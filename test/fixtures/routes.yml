@@ -1,0 +1,21 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  agency_id: 1
+  route_short_name: MyString
+  route_long_name: MyString
+  route_desc: MyString
+  route_type: MyString
+  route_url: MyString
+  route_color: MyString
+  route_text_color: MyString
+
+two:
+  agency_id: 1
+  route_short_name: MyString
+  route_long_name: MyString
+  route_desc: MyString
+  route_type: MyString
+  route_url: MyString
+  route_color: MyString
+  route_text_color: MyString
