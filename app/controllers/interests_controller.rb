@@ -11,21 +11,20 @@ class InterestsController < ApplicationController
   # GET /interests
   # GET /interests.xml
   def index
-	if params[:category] == "Parking"
-		`ruby #{RAILS_ROOT}/app/controllers/parking_parse.rb`
-		render :file => "#{RAILS_ROOT}/app/controllers/parking_output.json"
-	elsif params[:category] == "METRO"
-  		render :json => Interest.stops.to_json
-  elsif params[:category] == "Photos"
+  	if params[:category] == "Parking"
+      render :json => Parking.find(1).text
+  	elsif params[:category] == "METRO"
+    	render :json => Interest.stops.to_json
+    elsif params[:category] == "Photos"
       render :json => Interest.panoramio
-	elsif params[:category]
-		category_id = Category.find_by_name(params[:category]).id
-		render :json => Interest.find_all_by_category_id(category_id).to_json(:methods => :category_name)
-	else
-		render :json => Interest.all
-	end
+  	elsif params[:category]
+  		category_id = Category.find_by_name(params[:category]).id
+  		render :json => Interest.find_all_by_category_id(category_id).to_json(:methods => :category_name)
+  	else
+  		render :json => Interest.all
+  	end
 
-  end
+    end
 
   def list
     @interests = Interest.all

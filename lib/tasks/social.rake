@@ -1,7 +1,7 @@
-require 'rubygems'
-require 'json'
-require 'net/http'
-require 'hpricot'
+# require 'rubygems'
+# require 'json'
+# require 'net/http'
+# require 'hpricot'
 
 desc 'Update social media directory links'
 task :update_social do 
