@@ -6,13 +6,7 @@ task :update_parking do
   load "#{RAILS_ROOT}/config/environment.rb"
 
 	puts "updating parking info from UH"
-	
-	parking_db = Parking.find_or_create_by_id(1)
-  parking_db.text = get_parking
-  parking_db.save
-end
 
-def get_parking
   require 'rexml/document'
   require 'open-uri'
   
