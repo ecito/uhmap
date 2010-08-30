@@ -11,9 +11,7 @@ class InterestsController < ApplicationController
   # GET /interests
   # GET /interests.xml
   def index
-  	if params[:category] == "Parking"
-      render :json => Parking.find(1).text
-  	elsif params[:category] == "METRO"
+  	if params[:category] == "METRO"
     	render :json => Interest.stops.to_json
     elsif params[:category] == "Photos"
       render :json => Interest.panoramio
