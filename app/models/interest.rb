@@ -34,7 +34,7 @@ class Interest < ActiveRecord::Base
            :url => "http://twitter.com/#{tweet['from_user']}/status/#{tweet['id']}",
            :category_name => "Twitter"
          }
-      }
+     
   	end
     
     tweets
