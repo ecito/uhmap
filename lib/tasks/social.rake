@@ -33,26 +33,29 @@ task :update_social do
       social_link.social_category = social_category
       
       if social_link.network == "facebook"
-        puts "trying to get profile_id at #{social_link.url}"         
+        #puts "trying to get profile_id at #{social_link.url}"         
         
         social_link.profile_id = split_path(social_link.url)
         if social_link.profile_id < 1
            social_link.profile_id = scrape(social_link.url)
         end
         
-        puts
-        puts "FOUND #{social_link.profile_id}"
+        #puts "FOUND #{social_link.profile_id}"
         social_link.icon = "http://graph.facebook.com/#{social_link.profile_id}/picture" unless social_link.profile_id.nil? or social_link.profile_id < 1
         
+      elsif social_link.network == "twitter"
+        social_link.icon = "http://img.tweetimag.es/i/#{split_path_twitter(social_link.url)}_n.png"
       end
-
-
 
       social_link.save
       
     end
   end
   puts "Updated social links"
+end
+
+def split_path_twitter url
+  Pathname.new(URI.split(url)[5]).basename.to_s
 end
 
 def split_path url
