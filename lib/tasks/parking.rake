@@ -1,7 +1,7 @@
 desc "Update parking from UH police"
 task :update_parking do
-  ENV["RAILS_ENV"] = 'development'
-  RAILS_ENV.replace('development') if defined?(RAILS_ENV)
+  ENV["RAILS_ENV"] = 'production'
+  RAILS_ENV.replace('production') if defined?(RAILS_ENV)
 
   load "#{RAILS_ROOT}/config/environment.rb"
 
@@ -14,12 +14,14 @@ end
 
 def get_parking
   require 'rexml/document'
-
-  `curl -A "Mozilla 4.0" -L "http://maps.google.com/maps/ms?ie=UTF8&hl=en&oe=UTF8&msa=0&msid=102127978412867153719.00047159c9b1f53d544b6&output=kml" > parking_map.kml`
-
+  require 'open-uri'
+  
   stylemap = {}
 
-  doc = REXML::Document.new File.new("parking_map.kml")
+  response = ''
+  open("http://maps.google.com/maps/ms?ie=UTF8&hl=en&oe=UTF8&msa=0&msid=102127978412867153719.00047159c9b1f53d544b6&output=kml", "User-Agent" => "Mozilla 4.0") { |f| response = f.read }
+
+  doc = REXML::Document.new(response)
   root = doc.elements["kml/Document"]
   root.elements.each("Style") { |element| 
     style = element.attributes["id"]
@@ -33,7 +35,10 @@ def get_parking
 
   placemarks = Array.new
 
-  root.elements.each("Placemark") { |element| 
+  parking_category = Category.find_by_name("Parking")
+  parking_category.interests = []
+  
+  root.elements.each("Placemark") do |element| 
     name = element.elements["name"][0]
 
     if name != "Legend"
@@ -51,23 +56,21 @@ def get_parking
         lat = point[1]
         
         unless description.to_s == "DO NOT DELETE"
-        	placemarks << { :interest =>
-                            { :name => name.to_s, 
-                              :description => description.to_s, 
-                              :marker_icon => stylemap[style].to_s,
-                              :picture => nil,
-                              :latitude => lat.to_f,
-                              :longitude => long.to_f,
-                              :created_at => "2009-11-22T20:17:30Z", # FIX
-                              :url => nil,
-                              :category => "Parking"
-                            }
-                         }
+          
+          interest = Interest.find_or_create_by_name(name.to_s)
+          interest.update_attributes({
+            :name => name.to_s, 
+            :description => description.to_s, 
+            :marker_icon => stylemap[style].to_s,
+            :latitude => lat.to_f,
+            :longitude => long.to_f
+          })
+          
+          parking_category.interests << interest
+  
         end
       end
     end
-  }
-  
-  output = placemarks
-  output.to_json
+  end
+
 end
