@@ -33,26 +33,56 @@ task :update_social do
       social_link.social_category = social_category
       
       if social_link.network == "facebook"
-        doc =  Hpricot(open(social_link.url, "User-Agent" => "Mozilla 4.0").read)
+        puts "trying to get profile_id at #{social_link.url}"         
         
-        page_id = ''
-        person_id = ''
-        
-        begin
-          page_id = CGI::parse(doc.at("link[@type=application/rss+xml]").attributes["href"])["id"][0]
-        rescue Exception => e
-          begin
-            person_id = CGI::parse(doc.at("a.uiButton").attributes["href"])["fid"][0]
-          rescue Exception => e
-          end 
+        social_link.profile_id = split_path(social_link.url)
+        if social_link.profile_id < 1
+           social_link.profile_id = scrape(social_link.url)
         end
         
-        social_link.profile_id = page_id or person_id
+        puts
+        puts "FOUND #{social_link.profile_id}"
+        social_link.icon = "http://graph.facebook.com/#{social_link.profile_id}/picture" unless social_link.profile_id.nil? or social_link.profile_id < 1
+        
       end
-      
+
+
+
       social_link.save
       
     end
   end
   puts "Updated social links"
+end
+
+def split_path url
+  begin
+   page_id = Pathname.new(URI.split(url)[5]).basename.to_s.to_i
+    if page_id < 1
+      puts "resorting to GID"
+      page_id = CGI::parse(URI.split(url)[7])["gid"][0].to_i
+    end
+  rescue Exception => e
+  end
+  page_id
+end
+
+def scrape url
+  begin  
+    doc =  Hpricot(open(url, "User-Agent" => "Mozilla 4.0").read)
+
+    puts "*********RESORTING TO SCRAPE 1"
+  
+    begin
+      page_id = CGI::parse(doc.at("link[@type=application/rss+xml]").attributes["href"])["id"][0].to_i
+    rescue Exception => e
+      begin
+        puts "*********RESORTING TO SCRAPE 2"
+        page_id = CGI::parse(doc.at("a.uiButton").attributes["href"])["fid"][0].to_i
+      rescue Exception => e
+      end
+    end
+  rescue Exception => e
+  end
+  page_id
 end
