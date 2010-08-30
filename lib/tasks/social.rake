@@ -41,8 +41,10 @@ task :update_social do
         end
         
         #puts "FOUND #{social_link.profile_id}"
-        social_link.icon = "http://graph.facebook.com/#{social_link.profile_id}/picture" unless social_link.profile_id.nil? or social_link.profile_id < 1
-        
+        unless social_link.profile_id.nil? or social_link.profile_id < 1
+          social_link.icon = "http://graph.facebook.com/#{social_link.profile_id}/picture" 
+          social_link.url = "htt://touch.facebook.com/#/profile.php?id=#{social_link.profile_id}"
+        end
       elsif social_link.network == "twitter"
         social_link.icon = "http://img.tweetimag.es/i/#{split_path_twitter(social_link.url)}_n.png"
       end
