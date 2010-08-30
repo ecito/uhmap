@@ -29,8 +29,27 @@ task :update_social do
       social_link = SocialLink.find_or_create_by_title(a.attributes["title"])
       social_link.url = a.attributes["href"]
       social_link.network = link.attributes['class']
-      social_link.icon = "http://uhcamp.us.to/images/#{link.attributes['class']}.png"
+      social_link.icon = "http://uhcamp.us.to/images/social/#{link.attributes['class']}.png"
       social_link.social_category = social_category
+      
+      if social_link.network == "facebook"
+        doc =  Hpricot(open(social_link.url, "User-Agent" => "Mozilla 4.0").read)
+        
+        page_id = ''
+        person_id = ''
+        
+        begin
+          page_id = CGI::parse(doc.at("link[@type=application/rss+xml]").attributes["href"])["id"][0]
+        rescue Exception => e
+          begin
+            person_id = CGI::parse(doc.at("a.uiButton").attributes["href"])["fid"][0]
+          rescue Exception => e
+          end 
+        end
+        
+        social_link.profile_id = page_id or person_id
+      end
+      
       social_link.save
       
     end
