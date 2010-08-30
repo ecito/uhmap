@@ -1,7 +1,7 @@
 desc "Update parking from UH police"
 task :update_parking do
-  ENV["RAILS_ENV"] = 'development'
-  RAILS_ENV.replace('development') if defined?(RAILS_ENV)
+  ENV["RAILS_ENV"] = 'production'
+  RAILS_ENV.replace('production') if defined?(RAILS_ENV)
 
   load "#{RAILS_ROOT}/config/environment.rb"
 

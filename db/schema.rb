@@ -77,6 +77,7 @@ ActiveRecord::Schema.define(:version => 20100830095546) do
     t.string   "title"
     t.string   "url"
     t.string   "network"
+    t.string   "icon"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "social_category_id"
