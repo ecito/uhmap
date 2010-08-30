@@ -12,6 +12,10 @@ ActionController::Routing::Routes.draw do |map|
 	map.connect 'campus_map/*path', :controller => 'buildings', :action => 'photos'
 	map.connect 'infotech/*path', :controller => 'buildings', :action => 'infotech'
 	
+	map.resources :social_categories, :has_many => [:social_links]
+	
+	map.resources :social_links, :belongs_to => [:social_category]
+	
   # Sample of regular route:
   #   map.connect 'products/:id', :controller => 'catalog', :action => 'view'
   # Keep in mind you can assign values other than :controller and :action
